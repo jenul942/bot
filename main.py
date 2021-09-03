@@ -21,7 +21,7 @@ def scrap(message):
     output = output + x.text
   bot.reply_to(message, output)
 
-@bot.message_handler(commands=['deaths'])
+@bot.message_handler(commands=['cases'])
 def scrap(message):
   page = requests.get('https://www.worldometers.info/coronavirus/country/sri-lanka/')
   after_bs = BeautifulSoup(page.content, 'html.parser')
