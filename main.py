@@ -9,6 +9,10 @@ bot = telebot.TeleBot("1987421018:AAHfq6aNGFaWSGwDpNNBl1rNsXhRdLJHxRQ")
 @bot.message_handler(commands=["start"])
 def send_welcome(message):
   bot.reply_to(message, "Hello! I will give you covid 19 states in sri lanka")
+  
+@bot.message_handler(commands=["credit"])
+def send_welcome(message):
+  bot.reply_to(message, "@jenulranthisa")
 
 
 @bot.message_handler(commands=['all'])
